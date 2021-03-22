@@ -6,17 +6,28 @@ function setup() {
 	noStroke();
 	//stroke(225)
 
-    fill(255,200,200)
-    rect(100,100,800,200)
-    
     // 75% opacity.
     fill(255,0,0,191);
-    rect(200,200,800,200);
+    rect(50,100,800,150)
+    
+    //55% opacity.
+    fill(255,0,0,127);
+    rect(100,150,800,150);
+
+    //25% opacity.
+    fill(255,0,0,63);
+    rect(200,200,800,150)
 
     fill(160,0,0)
     rect(400,300,200,600)
+
+    // 75% opacity.
+    fill(255,0,0,191);
+    rect(500,300,200,600)
+
+
 }
 
 function mousePressed() {
-	saveCanvas("sketch-04","png")
+	saveCanvas("sketch-07","png")
 }
