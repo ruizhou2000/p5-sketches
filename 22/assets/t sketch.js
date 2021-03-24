@@ -1,4 +1,4 @@
-const sketchNumber = "22";
+const sketchNumber = "20";
 let bigT;
 
 
@@ -7,7 +7,7 @@ function preload() {
 }
 
 function setup()  {
-    createCanvas(1000,1000);
+    createCanvas(1000,1000)
     image(bigT,0,0)
 
 }
