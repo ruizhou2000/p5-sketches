@@ -1,4 +1,4 @@
-const sketchNumber = "16";
+const sketchNumber = "17";
 let bigT;
 
 function preload() {
@@ -11,7 +11,21 @@ function setup()  {
     background(255)
 ///    image(bigT,0,0)
 
-background(255)
+    unitSize = 20;
+    for (i=0;i<height;i=i+unitSize) {
+    	for (j=0;j<width;j=j+unitSize) {
+    		pixelColor = bigT.get(j, i);
+			
+			fill(pixelColor);
+            randomSize = random(10,15)
+			ellipse(j,i,randomSize,randomSize)
+        }
+    }
+
+}
+
+function draw() {
+    background(255)
         
         unitSize = 5;
         for (i=0;i<height;i=i+unitSize) {
@@ -23,15 +37,10 @@ background(255)
                 ellipse(j,i,randomSize,randomSize)
             }
         }
-
-}
-
-function draw() {
-    
 }
 
 
 function mousePressed() {
-	saveCanvas("sketch-16","png")
+	saveCanvas("sketch-17","png")
 
 }
