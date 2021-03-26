@@ -2,7 +2,7 @@ const sketchNumber = "16";
 let bigT;
 
 function preload() {
-    bigT = loadImage('assets/bigT.png');
+    bigT = loadImage('assets/bigT2.png');
 }
 
 function setup()  {
