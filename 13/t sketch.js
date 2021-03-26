@@ -19,9 +19,9 @@ background(255)
                 pixelColor = bigT.get(j, i);
                 
                 if (JSON.stringify(pixelColor) == JSON.stringify([255,0,255,255])) {
-                fill(pixelColor);
-                randomSize = random(25,50)
-                ellipse(j,i,randomSize,randomSize)
+                    fill(pixelColor);
+                    randomSize = random(25,50)
+                    ellipse(j,i,randomSize,randomSize)
                 }
                     
                     
