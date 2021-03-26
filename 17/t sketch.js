@@ -8,6 +8,14 @@ function preload() {
 function setup()  {
     noStroke();
     createCanvas(1000,1000);
+    
+    frameRate(15)
+    createLoop({
+        durtion:10, 
+        gif:true
+    })
+    
+
     background(255)
 ///    image(bigT,0,0)
 
@@ -40,7 +48,3 @@ function draw() {
 }
 
 
-function mousePressed() {
-	saveCanvas("sketch-17","png")
-
-}
